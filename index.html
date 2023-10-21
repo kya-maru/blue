@@ -4,333 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Blue</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;400&display=swap" rel="stylesheet">
-    <title>ayaka portfolio</title>
-    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- header -->
-    <header class="header">
-        <h1 class="site-title">
-            <a href="">
-                <span>a</span>yaka
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <header>
+        <h1><a href="#">Blue</a></h1>
     </header>
+    <div class="menu">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="open">Menu</label>
+        <label for="menu" class="back"></label>
+        <aside>
+            <label for="menu" class="close"><div class="line1"></div><div class="line2"></div></label>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#">Home<span>ホーム</span></a></li> -->
+                    <li><a href="#about">About<span>Blueについて</span></a></li>
+                    <li><a href="#system">System<span>料金システム</span></a></li>
+                    <li><a href="#access">Access<span>アクセス</span></a></li>
+                    <!-- <li><a href="#">Colimn<span>コラム</span></a></li> -->
+                    <!-- <li><a href="#">News<span>イベント情報</span></a></li> -->
+                    <!-- <li><a href="#">Contact<span>お問い合わせ</span></a></li> -->
+                    <!-- <li><a href="#">Reservation<span>電話予約</span></a></li> -->
+                    <!-- <li><a href="#">Recruit<span>求人情報</span></a></li> -->
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="reserve">
+        <h3>ご予約はこちら</h3>
+        <div class="reserve-info">
+            <p>Reservation  電話予約</p>
+            <a href="tel:000-0000-0000">000-0000-0000</a>
+            <p>受付時間 20:00~0:00</p>
+        </div>
+    </div>
 
-    <!-- main -->
-    <main class="main">
-        <!-- mv -->
-        <picture class="mv fadeIn">
-            <!-- <source media="(max-width: 600px)" srcset="images/mainvisual.png"> -->
-            <img src="https://github.com/kya-maru/portfolio/blob/main/mainvisual.png" alt="メイン画像">
-        </picture>
-
-        <!-- about -->
-        <section id="about" class="wrapper fadeRight">
-            <h2 class="sec-title">About</h2>
-            <figure class="icon">
-                <img src="https://github.com/kya-maru/portfolio/blob/main/kaeru.png" alt="アイコン">
-                <figcaption class="self-introduction">
-                    はじめまして。2000年生まれのあやかと申します。<br>
-                    ADHDと双極性障害を持っていますが、現在就労移行支援事業所にてプログラミングを勉強中です。<br>
-                    Webエンジニアを目指して頑張ります！
-                </figcaption>
-            </figure>
-        </section>
-
-        <!-- works -->
-        <section id="works" class="wrapper fadeLeft">
-            <h2 class="sec-title">Works</h2>
-            <ul>
-                <li class="modal-trigger">
-                    <img src="https://github.com/kya-maru/portfolio/blob/main/portfolio.png" alt="portfolio">
-                    <div class="disc">
-                        <p>
-                            自分のこと、作ったものをまとめたサイトです。制作期間は１か月程です。
-                            <br>
-                            私の好きなカエルをモチーフに全体をまとめました。
-                            <br>
-                            まだまだ内容は少ないですがこれから増やしていきたいと思います。
-                        </p>
-                        <h4>使用した言語等</h4>
-                        <p>HTML,CSS,JavaScript,jQuery</p>
-                        <a href="https://miyazakiayaka2000.github.io/FE-introduction-quiz/">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="works-list">portfolio</p>
-                </li>
-                <li class="modal-trigger">
-                    <img src="https://github.com/kya-maru/portfolio/blob/main/FE-introduction-quiz.png" alt="FE入門クイズ">
-                    <div class="disc">
-                        <p>
-                            基本情報技術者試験の過去問を解く前にまずは勉強した部分の理解度確認テストを行いたくて作成しました。制作期間は１か月半程です。
-                            <br>
-                            間違いやすいところをピックアップしているので正しく理解するために復習できます。
-                            また、問題を解くだけのシンプルな作りで追加や削除をしやすくしています。
-                            <br>
-                            このアプリケーションの作成を通してJavaScriptでの簡単なHTML操作を学ぶことができました。
-                            今後はもっと問題を増やしたり機能を追加したりしていきたいと考えています。
-                        </p>
-                        <h4>使用した言語等</h4>
-                        <p>HTML,CSS,Bootstrap5,JavaScript</p>
-                        <a href="https://kya-maru.github.io/FE-introduction-quiz/">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="works-list">基本情報入門クイズ</p>
-                </li>
-                <li class="modal-trigger">
-                    <img src="https://github.com/kya-maru/portfolio/blob/main/Blue.png" alt="BlueのHP">
-                    <div class="disc">
-                        <p>
-                            Blueというお店のHPです。今はまだ画像と文章は準備中なのでダミーを入れています。制作期間は１か月程です。
-                            <br>
-                            このHP制作でスライドショーの入れ方や複雑な画面のレイアウトを学ぶことができました。
-                            <br>
-                            今後はページ数を増やしたり実際にお店に行きたくなるような魅せ方を工夫したりしていきたいと考えています。
-                        </p>
-                        <h4>使用した言語等</h4>
-                        <p>HTML,CSS,JavaScript,jQuery,slick</p>
-                        <a href="https://kya-maru.github.io/blue/">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="works-list">BlueのHP</p>
-                </li>
-            </ul>
-            <div id="glay_layer"></div>
-            <div id="over_layer">
-                <div id="disc"></div>
-                <img id="content" src="" alt="">
+    <div class="slider">
+        <div class="slick-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="">
+        </div>
+        <div class="slick-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/jake-colling-2gPZfW5aHwI-unsplash.jpg" alt="">
+        </div>
+        <div class="slick-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/krisztina-papp-VRnb4dMwmBQ-unsplash.jpg" alt="">
+        </div>
+    </div>
+        <div class="title">
+            <h2>Blue</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, explicabo.</p>
+        </div>
+        <div class="info">
+            <p>OPEN 20:00 - LAST</p>
+            <p>日曜定休・祝日不定休</p>
+        </div>
+        
+    <section id="about" class="sec-01 wrapper">
+        <div class="container">
+            <h3>About</h3>
+            <p>Blueについて</p>
+            <div class="content">
+                <img src="https://github.com/kya-maru/blue/blob/main/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="">
+                <div class="text-box">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis officiis velit dolores nisi at officia illo omnis id, incidunt perspiciatis aperiam harum doloribus fuga nostrum in iure quis aspernatur.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- skill -->
-        <section id="skill" class="wrapper fadeRight">
-            <h2 class="sec-title">Skill</h2>
-            <div class="skill">
-                <article class="skill-card">
-                    <h3>デザイン・コーディング</h3>
-                    <table class="skill-table">
-                        <thead>
-                            <tr>
-                                <th class="tech">技術</th>
-                                <th class="period">学習期間</th>
-                                <th class="skill">スキル</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="tech">HTML5</th>
-                                <td class="term">3ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate2"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">CSS3</th>
-                                <td class="term">3ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate2"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">Photoshop</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate4"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">Illustrator</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate4"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <article class="skill-card">
-                    <h3>言語・フレームワーク</h3>
-                    <table class="skill-table">
-                        <thead>
-                            <tr>
-                                <th class="tech">技術</th>
-                                <th class="period">学習期間</th>
-                                <th class="skill">スキル</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="tech">JavaScript</th>
-                                <td class="term">2ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate3"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">jQuery</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate3"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">PHP</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate3"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">Laravel</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate4"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <article class="skill-card">
-                    <h3>その他</h3>
-                    <table class="skill-table">
-                        <thead>
-                            <tr>
-                                <th class="tech">ツール</th>
-                                <th class="period">学習期間</th>
-                                <th class="skill">スキル</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="tech">Git</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate4"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="tech">Slack</th>
-                                <td class="term">3ヶ月</td>
-                                <td class="star">
-                                    <span class="rating">
-                                        <p class="rate rate2"></p>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <article class="skill-card">
-                    <h3>資格</h3>
-                    <table class="skill-table">
-                        <thead>
-                            <tr>
-                                <th class="tech">資格</th>
-                                <th class="period">学習期間</th>
-                                <th class="time">取得日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="tech">基本情報技術者</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="time"></td>
-                            </tr>
-                            <tr>
-                                <th class="tech">HTML5プロフェッショナル認定</th>
-                                <td class="term">1ヶ月</td>
-                                <td class="time"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
+    <div class="image">
+        <img src="https://github.com/kya-maru/blue/blob/main/krisztina-papp-VRnb4dMwmBQ-unsplash.jpg" alt="">
+    </div>
+
+    <section class="sec-02 wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="text-box">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis officiis velit dolores nisi at officia illo omnis id, incidunt perspiciatis aperiam harum doloribus fuga nostrum in iure quis aspernatur.</p>
+                    </div>
+                    <img src="https://github.com/kya-maru/blue/blob/main/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="">
+                </div>
             </div>
-        </section>
+    </section>
 
-        <!-- profile -->
-        <section id="profile" class="wrapper fadeLeft">
-            <h2 class="sec-title">Profile</h2>
-            <dl>
-                <dt>2000.2</dt>
-                <dd>誕生</dd>
-                <dt>2010.10</dt>
-                <dd>当時生徒数佐賀県１位の小学校へ転校。友達がたくさんできる</dd>
-                <dt>2016.8</dt>
-                <dd>応援団に入って体育祭を盛り上げる</dd>
-                <dt>2017.5</dt>
-                <dd>ボランティア部の部長になって地域のイベントに参加</dd>
-                <dt>2017.8</dt>
-                <dd>RAPでのプレゼン発表で最優秀賞をいただく</dd>
-                <dt>2023.3</dt>
-                <dd>就労移行支援事業所に入所。プログラミングを学ぶ</dd>
-            </dl>
-        </section>
+    <div class="autoplay">
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="">
+        </div>
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/jake-colling-2gPZfW5aHwI-unsplash.jpg" alt="">
+        </div>
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/krisztina-papp-VRnb4dMwmBQ-unsplash.jpg" alt="">
+        </div>
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" alt="">
+        </div>
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/jake-colling-2gPZfW5aHwI-unsplash.jpg" alt="">
+        </div>
+        <div class="autoplay-img">
+            <img src="https://github.com/kya-maru/blue/blob/main/krisztina-papp-VRnb4dMwmBQ-unsplash.jpg" alt="">
+        </div>
+    </div>
 
-        <!-- contact -->
-        <section id="contact" class="wrapper fadeRight">
-            <h2 class="sec-title">Contact</h2>
-            <p>お問い合わせは以下のフォームから</p>
-            <form action="" method="post">
-                <dl>
-                    <dt><label for="name">お名前</label></dt>
-                    <dd><input type="text" id="name" name="name" size="20" maxlength="10" tabindex="1"></dd>
-                    <dt><label for="email">メールアドレス</label></dt>
-                    <dd><input type="email" id="email" name="email" id="" tabindex="2"></dd>
-                    <dt><label for="comment">コメント</label></dt>
-                    <dd><textarea id="comment" name="comment" id="" cols="30" rows="10" tabindex="3"></textarea></dd>
-                </dl>
-                <div class="button"><input type="submit" value="送信"></div>
-            </form>
-        </section>
-    </main>
+    <section id="system" class="wrapper">
+        <h3>System</h3>
+        <p>セット料金 (50min)</p>
+        <table>
+            <tr>
+                <td>20:00 ~ 20:59</td>
+                <td>6,000円</td>
+            </tr>
+            <tr>
+                <td>21:00 ~ 21:59</td>
+                <td>7,000円</td>
+            </tr>
+            <tr>
+                <td>22:00 ~ LAST</td>
+                <td>8,000円</td>
+            </tr>
+            <tr>
+                <td>延長</td>
+                <td>8,000円 / 60min</td>
+            </tr>
+            <tr>
+                <td>指名料</td>
+                <td>3,000円</td>
+            </tr>
+            <tr>
+                <td>同伴料</td>
+                <td>20,000円 / 80分</td>
+            </tr>
+            <tr>
+                <td>税・サービス料</td>
+                <td>30%</td>
+            </tr>
+        </table>
+    </section>
 
-    <!-- footer -->
-    <footer class="footer">
-        <p class="cmt">Thank you for coming!</p>
-        <p class="time">更新日：<time datetime="2023-06-07" pubdate>2023.6.7</time></p>
-        <small>&copy; 2023 ayaka miyazaki</small>
+    <footer>
+        <h3>Blue</h3>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>OPEN 20:00 - LAST</p>
+                <p>日曜定休・祝日不定休</p>
+            </div>
+            <div id="access">
+                <p>&#12306;153-0051</p>
+                <p>東京都目黒区上目黒3-7-11 松村ビル3F</p>
+                <a href="tel:+0000000000">00-0000-0000</a>
+            </div>
+            <div class="recruit">
+                <a href="#">Recruit<span>求人情報</span></a>
+            </div>
+        </div>
     </footer>
-    <script src="jquery.js"></script>
-    <script src="main.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
